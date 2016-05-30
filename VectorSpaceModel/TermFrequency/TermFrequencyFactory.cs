@@ -31,6 +31,6 @@ namespace VectorSpaceModel.TermFrequency
 
     public interface ITermFrequencyCalc
     {
-        void CalculateTermFrequency(Corpus corpus);
+        void CalculateTermFrequency(Document document);
     }
 }
