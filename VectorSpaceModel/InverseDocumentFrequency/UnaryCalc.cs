@@ -4,7 +4,10 @@
     {
         public void Calculate(Corpus corpus)
         {
-            throw new System.NotImplementedException();
+            foreach (var term in corpus.Terms)
+            {
+                corpus.InverseDocumentFrequency.Add(term, 1);
+            }
         }
     }
 }

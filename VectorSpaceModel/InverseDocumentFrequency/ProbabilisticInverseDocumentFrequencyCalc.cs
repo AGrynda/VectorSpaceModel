@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace VectorSpaceModel.InverseDocumentFrequency
 {
@@ -6,7 +7,13 @@ namespace VectorSpaceModel.InverseDocumentFrequency
     {
         public void Calculate(Corpus corpus)
         {
-            throw new NotImplementedException();
+            var totalDocuments = corpus.Documents.Count;
+            foreach (var term in corpus.Terms)
+            {
+                var occursInDocuments = corpus.Documents.Count(document => document.Terms.Contains(term));
+                corpus.InverseDocumentFrequency.Add(term,
+                    Math.Log((totalDocuments - occursInDocuments)/(double) occursInDocuments));
+            }
         }
     }
 }
