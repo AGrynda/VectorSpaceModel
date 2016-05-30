@@ -43,6 +43,7 @@
     <Compile Include="Corpus.cs" />
     <Compile Include="Document.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistics.cs" />
     <Compile Include="VsmLogic.cs" />
     <Compile Include="WeightingScheme.cs" />
   </ItemGroup>
