@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VectorSpaceModel
+﻿namespace VectorSpaceModel
 {
-    class WeightingScheme
+    public enum TfWeight
     {
+        Binary,
+        RawFrequency,
+        LogNormalization,
+        DoubleNormalizationHalf,
+        DoubleNormalizationK
+    }
+
+    public enum IdfWeight
+    {
+        Unary,
+        InverseDocumentFrequency,
+        InverseDocumentFrequencySmooth,
+        InverseDocumentFrequencyMax,
+        ProbabilisticInverseDocumentFrequency,
     }
 }
