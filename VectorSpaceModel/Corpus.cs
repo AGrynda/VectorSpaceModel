@@ -13,8 +13,8 @@ namespace VectorSpaceModel
 
     public class Corpus : ICorpus
     {
-        IList<Document> documents;
-        IList<string> terms;
+        public IList<Document> Documents { get; set; }
+        public IList<string> Terms { get; set; }
 
         IList<string> selectedTerms;
 
