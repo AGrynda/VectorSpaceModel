@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace VectorSpaceModel
 {
-    class Document
+    class WeightingScheme
     {
-        IList<string> terms;
-        IDictionary<string, double> termFrequency;
-        IDictionary<string, double> inverseDocumentFrequency;
-
-
     }
 }

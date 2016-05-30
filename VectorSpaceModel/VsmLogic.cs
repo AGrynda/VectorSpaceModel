@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace VectorSpaceModel
 {
-    class Document
+    class VsmLogic
     {
-        IList<string> terms;
-        IDictionary<string, double> termFrequency;
-        IDictionary<string, double> inverseDocumentFrequency;
-
 
     }
 }

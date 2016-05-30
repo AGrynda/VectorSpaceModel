@@ -17,5 +17,15 @@ namespace VectorSpaceModel
         IList<string> terms;
 
         IList<string> selectedTerms;
+
+        public Corpus(string path)
+        {
+            
+        }
+
+        public Corpus()
+        {
+            
+        }
     }
 }
