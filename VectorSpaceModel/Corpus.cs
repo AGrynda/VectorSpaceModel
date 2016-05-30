@@ -15,7 +15,7 @@ namespace VectorSpaceModel
     {
         public IList<Document> Documents { get; set; }
         public HashSet<string> Terms { get; set; }
-        public IDictionary<string, double> InverseDocumentFrequency { get; set; }
+        public Dictionary<string, double> InverseDocumentFrequency { get; set; }
 
         IList<string> selectedTerms;
 
