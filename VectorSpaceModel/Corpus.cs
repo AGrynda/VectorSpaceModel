@@ -8,13 +8,14 @@ namespace VectorSpaceModel
 {
     public interface ICorpus
     {
-
+        void AddDocument(Document doc);
     }
 
     public class Corpus : ICorpus
     {
         public IList<Document> Documents { get; set; }
         public IList<string> Terms { get; set; }
+        public IDictionary<string, double> InverseDocumentFrequency { get; set; }
 
         IList<string> selectedTerms;
 
@@ -26,6 +27,11 @@ namespace VectorSpaceModel
         public Corpus()
         {
             
+        }
+
+        public void AddDocument(Document doc)
+        {
+            Documents.Add(doc);
         }
     }
 }

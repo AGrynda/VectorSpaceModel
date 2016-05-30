@@ -10,6 +10,10 @@ namespace VectorSpaceModel
     {
         public IList<string> Terms { get; set; }
         public IDictionary<string, double> TermFrequency { get; set; }
-        public IDictionary<string, double> InverseDocumentFrequency { get; set; }
+
+        public Document(IList<string> terms)
+        {
+            Terms = terms;
+        }
     }
 }

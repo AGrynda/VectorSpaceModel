@@ -42,12 +42,16 @@
   <ItemGroup>
     <Compile Include="FileHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VectorSpaceModel\VectorSpaceModel.csproj">
       <Project>{ED5B54E5-DFE3-484B-A6EA-32F4AD0FE600}</Project>
       <Name>VectorSpaceModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="stop-word-list.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
