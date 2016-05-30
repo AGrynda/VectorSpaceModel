@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace VectorSpaceModel
 {
-    class Document
+    public class Document
     {
-        IList<string> terms;
-        IDictionary<string, double> termFrequency;
-        IDictionary<string, double> inverseDocumentFrequency;
-
-
+        public IList<string> Terms { get; set; }
+        public IDictionary<string, double> TermFrequency { get; set; }
+        public IDictionary<string, double> InverseDocumentFrequency { get; set; }
     }
 }
