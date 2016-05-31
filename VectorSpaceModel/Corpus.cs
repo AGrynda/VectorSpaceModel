@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace VectorSpaceModel
 {
@@ -13,21 +9,19 @@ namespace VectorSpaceModel
 
     public class Corpus : ICorpus
     {
-        public IList<Document> Documents { get; set; }
-        public HashSet<string> Terms { get; set; }
-        public Dictionary<string, double> InverseDocumentFrequency { get; set; }
-
-        IList<string> selectedTerms;
+        private IList<string> selectedTerms;
 
         public Corpus(string path)
         {
-            
         }
 
         public Corpus()
         {
-            
         }
+
+        public IList<Document> Documents { get; set; } = new List<Document>();
+        public HashSet<string> Terms { get; set; } = new HashSet<string>();
+        public Dictionary<string, double> InverseDocumentFrequency { get; set; } = new Dictionary<string, double>();
 
         public void AddDocument(Document doc)
         {

@@ -2,30 +2,30 @@
 
 namespace VectorSpaceModel.InverseDocumentFrequency
 {
-    public class InverseDocumentFrequencyFactory
+    public class IdfFactory
     {
-        public IInverseDocumentFrequencyCalc GetCalc(IdfWeight weight)
+        public IIdfCalculation GetCalc(IdfWeight weight)
         {
             switch (weight)
             {
                 case IdfWeight.Unary:
-                    return new UnaryCalc();
+                    return new UnaryCalculation();
                 case IdfWeight.InverseDocumentFrequency:
-                    return new InverseDocumentFrequencyCalc();
+                    return new IdfCalculation();
                 case IdfWeight.InverseDocumentFrequencySmooth:
-                    return new InverseDocumentFrequencySmoothCalc();
+                    return new IdfSmoothCalculation();
                 case IdfWeight.InverseDocumentFrequencyMax:
-                    return new InverseDocumentFrequencyMaxCalc();
+                    return new IdfMaxCalculation();
                 case IdfWeight.ProbabilisticInverseDocumentFrequency:
-                    return new ProbabilisticInverseDocumentFrequencyCalc();
+                    return new ProbabilisticIdfCalculation();
                 default:
                     throw new ArgumentOutOfRangeException(nameof(weight), weight, null);
             }
         }
     }
 
-    public interface IInverseDocumentFrequencyCalc
+    public interface IIdfCalculation
     {
-        void Calculate(Corpus corpus);
+        void CalculateIdf(Corpus corpus);
     }
 }
