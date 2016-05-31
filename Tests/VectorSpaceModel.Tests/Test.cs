@@ -15,8 +15,8 @@ namespace VectorSpaceModel.Tests
             var tfIdfContext = new TfIdfContext(new LogNormalizationIDF());
             var tfIdfCalculators = tfIdfContext.Calculators();
 
-            tfIdfCalculators.ItfCalculation.Should().BeAssignableTo<LogNormalizationCalc>();
-            tfIdfCalculators.IidfCalculation.Should().BeAssignableTo<IDFCalculation>();
+            tfIdfCalculators.TFCalculation.Should().BeAssignableTo<LogNormalizationCalc>();
+            tfIdfCalculators.IDFCalculation.Should().BeAssignableTo<IDFCalculation>();
         }
     }
 }

@@ -49,6 +49,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataHandler\DataHandler.csproj">
+      <Project>{13193EEA-B925-4738-841D-609F76467403}</Project>
+      <Name>DataHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VectorSpaceModel\VectorSpaceModel.csproj">
+      <Project>{ED5B54E5-DFE3-484B-A6EA-32F4AD0FE600}</Project>
+      <Name>VectorSpaceModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
