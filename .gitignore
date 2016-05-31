@@ -31,7 +31,6 @@
 *.received.txt
 *.received.xml
 *.received.html
-*.DotSettings
 
 *.zip
 *.7z
@@ -52,7 +51,5 @@ _ReSharper*/
 [Bb]uild[Ll]og.*
 
 .svn/
-Output/
 packages/
-_GenResults/
 *compare_*approved.txt

@@ -7,10 +7,10 @@ namespace VectorSpaceModel.TF_IDF.Schemes
     {
         public override TfIdfCalculators Calculators()
         {
-            var tfFactory = new TfFactory();
+            var tfFactory = new TFFactory();
             var tfCalculation = tfFactory.GetCalculator(TfWeight.LogNormalization);
 
-            var idfFactory = new IdfFactory();
+            var idfFactory = new IDFFactory();
             var idfCalculation = idfFactory.GetCalc(IdfWeight.Unary);
 
             return new TfIdfCalculators(idfCalculation, tfCalculation);

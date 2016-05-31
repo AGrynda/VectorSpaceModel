@@ -2,9 +2,9 @@
 
 namespace VectorSpaceModel.TermFrequency
 {
-    public class TfFactory
+    public class TFFactory
     {
-        public ITfCalculation GetCalculator(TfWeight tfWeight, double K=0.5)
+        public ITFCalculation GetCalculator(TfWeight tfWeight, double k = 0.5)
         {
             switch (tfWeight)
             {
@@ -17,15 +17,16 @@ namespace VectorSpaceModel.TermFrequency
                 case TfWeight.DoubleNormalizationHalf:
                     return new DoubleNormalizationKCalc(0.5);
                 case TfWeight.DoubleNormalizationK:
-                    return new DoubleNormalizationKCalc(K);
+                    return new DoubleNormalizationKCalc(k);
                 default:
                     throw new ArgumentOutOfRangeException(nameof(tfWeight), tfWeight, null);
             }
         }
     }
 
-    public interface ITfCalculation
+    public interface ITFCalculation
     {
-        void CalculateTf(Document document);
+        void CalculateTF(Document document);
+        void CalculateTF(Corpus corpus);
     }
 }

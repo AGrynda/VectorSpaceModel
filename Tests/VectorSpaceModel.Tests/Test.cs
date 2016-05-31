@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
 using VectorSpaceModel.InverseDocumentFrequency;
 using VectorSpaceModel.TermFrequency;
@@ -13,14 +12,11 @@ namespace VectorSpaceModel.Tests
         [Test]
         public void ShouldReturnCalculators()
         {
-            var tfIdfContext = new TfIdfContext(new LogNormalizationIdf());
+            var tfIdfContext = new TfIdfContext(new LogNormalizationIDF());
             var tfIdfCalculators = tfIdfContext.Calculators();
 
-            tfIdfCalculators.TfCalculation.CalculateTf(new Document(new List<string>()));
-            tfIdfCalculators.IdfCalculation.CalculateIdf(new Corpus());
-
-            tfIdfCalculators.TfCalculation.Should().BeAssignableTo<LogNormalizationCalc>();
-            tfIdfCalculators.IdfCalculation.Should().BeAssignableTo<IdfCalculation>();
+            tfIdfCalculators.ItfCalculation.Should().BeAssignableTo<LogNormalizationCalc>();
+            tfIdfCalculators.IidfCalculation.Should().BeAssignableTo<IDFCalculation>();
         }
     }
 }

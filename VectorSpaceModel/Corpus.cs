@@ -21,7 +21,8 @@ namespace VectorSpaceModel
 
         public IList<Document> Documents { get; set; } = new List<Document>();
         public HashSet<string> Terms { get; set; } = new HashSet<string>();
-        public Dictionary<string, double> InverseDocumentFrequency { get; set; } = new Dictionary<string, double>();
+        public Dictionary<string, double> IDF { get; set; } = new Dictionary<string, double>();
+        public Dictionary<string, double> TF { get; set; } = new Dictionary<string, double>();
 
         public void AddDocument(Document doc)
         {

@@ -2,16 +2,21 @@
 
 namespace VectorSpaceModel.TermFrequency
 {
-    public class RawFrequencyCalc : ITfCalculation
+    public class RawFrequencyCalc : ITFCalculation
     {
-        public void CalculateTf(Document document)
+        public void CalculateTF(Document document)
         {
             var count = document.Terms.Count;
             var grouping = document.Terms.GroupBy(s => s);
             foreach (var variable in grouping)
             {
-                document.TermFrequency.Add(variable.Key, variable.Count()/(double) count);
+                document.TF.Add(variable.Key, variable.Count()/(double) count);
             }
+        }
+
+        public void CalculateTF(Corpus corpus)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

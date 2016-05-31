@@ -3,14 +3,14 @@ using VectorSpaceModel.TermFrequency;
 
 namespace VectorSpaceModel.TF_IDF.Schemes
 {
-    public class BinaryIdfSmooth : Scheme
+    public class BinaryIDFSmooth : Scheme
     {
         public override TfIdfCalculators Calculators()
         {
-            var tfFactory = new TfFactory();
+            var tfFactory = new TFFactory();
             var tfCalculation = tfFactory.GetCalculator(TfWeight.LogNormalization);
 
-            var idfFactory = new IdfFactory();
+            var idfFactory = new IDFFactory();
             var idfCalculation = idfFactory.GetCalc(IdfWeight.InverseDocumentFrequencySmooth);
 
             return new TfIdfCalculators(idfCalculation, tfCalculation);

@@ -42,11 +42,11 @@
   <ItemGroup>
     <Compile Include="Corpus.cs" />
     <Compile Include="Document.cs" />
-    <Compile Include="InverseDocumentFrequency\IdfCalculation.cs" />
-    <Compile Include="InverseDocumentFrequency\IdfFactory.cs" />
-    <Compile Include="InverseDocumentFrequency\IdfMaxCalculation.cs" />
-    <Compile Include="InverseDocumentFrequency\IdfSmoothCalculation.cs" />
-    <Compile Include="InverseDocumentFrequency\ProbabilisticIdfCalculation.cs" />
+    <Compile Include="InverseDocumentFrequency\IDFCalculation.cs" />
+    <Compile Include="InverseDocumentFrequency\IDFFactory.cs" />
+    <Compile Include="InverseDocumentFrequency\IDFMaxCalculation.cs" />
+    <Compile Include="InverseDocumentFrequency\IDFSmoothCalculation.cs" />
+    <Compile Include="InverseDocumentFrequency\ProbabilisticIDFCalculation.cs" />
     <Compile Include="InverseDocumentFrequency\UnaryCalculation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Statistics.cs" />

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace VectorSpaceModel.InverseDocumentFrequency
 {
-    public class ProbabilisticIdfCalculation : IIdfCalculation
+    public class ProbabilisticIDFCalculation : IIDFCalculation
     {
         public void CalculateIdf(Corpus corpus)
         {
@@ -11,7 +11,7 @@ namespace VectorSpaceModel.InverseDocumentFrequency
             foreach (var term in corpus.Terms)
             {
                 var occursInDocuments = corpus.Documents.Count(document => document.Terms.Contains(term));
-                corpus.InverseDocumentFrequency.Add(term,
+                corpus.IDF.Add(term,
                     Math.Log((totalDocuments - occursInDocuments)/(double) occursInDocuments));
             }
         }

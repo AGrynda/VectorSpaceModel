@@ -5,13 +5,13 @@ namespace VectorSpaceModel.TF_IDF
 {
     public class TfIdfCalculators
     {
-        public IIdfCalculation IdfCalculation { get; }
-        public ITfCalculation TfCalculation { get; }
+        public IIDFCalculation IidfCalculation { get; }
+        public ITFCalculation ItfCalculation { get; }
 
-        public TfIdfCalculators(IIdfCalculation idfCalculation, ITfCalculation tfCalculation)
+        public TfIdfCalculators(IIDFCalculation iidfCalculation, ITFCalculation itfCalculation)
         {
-            IdfCalculation = idfCalculation;
-            TfCalculation = tfCalculation;
+            IidfCalculation = iidfCalculation;
+            ItfCalculation = itfCalculation;
         }
     }
 }
