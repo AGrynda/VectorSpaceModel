@@ -1,8 +1,8 @@
 ﻿namespace VectorSpaceModel.InverseDocumentFrequency
 {
-    public class UnaryCalc : IInverseDocumentFrequencyCalc
+    public class UnaryCalculation : IIdfCalculation
     {
-        public void Calculate(Corpus corpus)
+        public void CalculateIdf(Corpus corpus)
         {
             foreach (var term in corpus.Terms)
             {

@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace VectorSpaceModel.InverseDocumentFrequency
 {
-    public class InverseDocumentFrequencyMaxCalc : IInverseDocumentFrequencyCalc
+    public class IdfMaxCalculation : IIdfCalculation
     {
-        public void Calculate(Corpus corpus)
+        public void CalculateIdf(Corpus corpus)
         {
             foreach (var term in corpus.Terms)
             {

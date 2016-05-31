@@ -17,4 +17,10 @@
         InverseDocumentFrequencyMax,
         ProbabilisticInverseDocumentFrequency,
     }
+
+    public enum WeightingScheme
+    {
+        DocumentTermWeight,
+        QueryTermWeight
+    }
 }
