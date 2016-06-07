@@ -50,6 +50,8 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 [Bb]uild[Ll]og.*
 
+WordNet/*
+
 .svn/
 packages/
 *compare_*approved.txt

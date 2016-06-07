@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CC5E2355-7561-4CB5-8C40-31E14CA3A37D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{1956D969-4A69-4F7A-B553-2FD485B09FB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>diplomlyat</RootNamespace>
-    <AssemblyName>diplomlyat</AssemblyName>
+    <RootNamespace>LinguisticProcessor</RootNamespace>
+    <AssemblyName>LinguisticProcessor</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -51,26 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Stemmer.cs" />
+    <Compile Include="StopWordsFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <Content Include="stop-word-list.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataHandler\DataHandler.csproj">
-      <Project>{13193EEA-B925-4738-841D-609F76467403}</Project>
-      <Name>DataHandler</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LinguisticProcessor\LinguisticProcessor.csproj">
-      <Project>{1956d969-4a69-4f7a-b553-2fd485b09fb4}</Project>
-      <Name>LinguisticProcessor</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VectorSpaceModel\VectorSpaceModel.csproj">
-      <Project>{ED5B54E5-DFE3-484B-A6EA-32F4AD0FE600}</Project>
-      <Name>VectorSpaceModel</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
