@@ -12,7 +12,7 @@ namespace VectorSpaceModel.Tests
         [Test]
         public void ShouldReturnCalculators()
         {
-            var tfIdfContext = new TfIdfContext(new LogNormalizationIDF());
+            var tfIdfContext = new TfIdfContext(new LogIdfNormalization());
             var tfIdfCalculators = tfIdfContext.Calculators();
 
             tfIdfCalculators.TFCalculation.Should().BeAssignableTo<LogNormalizationCalc>();

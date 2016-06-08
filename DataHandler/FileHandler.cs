@@ -12,7 +12,7 @@ namespace DataHandler
 
             var files = Directory.GetFiles(path, "*.txt");
 
-            foreach (var terms in files.Select(file => TextHandler.GetTerms(File.ReadAllText(file))))
+            foreach (var terms in files.Select(file => TextHandler.GetTerms(File.ReadAllText(file).ToLower())))
             {
                 corpus.AddDocument(new Document(terms));
             }

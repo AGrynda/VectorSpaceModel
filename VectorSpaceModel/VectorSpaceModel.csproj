@@ -65,9 +65,9 @@
     <Compile Include="TermFrequency\TfFactory.cs" />
     <Compile Include="TF_IDF\Schemes\BinaryIdfSmooth.cs" />
     <Compile Include="TF_IDF\Schemes\DoubleNormalizationInverse.cs" />
-    <Compile Include="TF_IDF\Schemes\LogNormalizationIdf.cs" />
-    <Compile Include="TF_IDF\Schemes\LogNormalizationInverse.cs" />
-    <Compile Include="TF_IDF\Schemes\LogNormalizationUnary.cs" />
+    <Compile Include="TF_IDF\Schemes\LogIdfNormalization.cs" />
+    <Compile Include="TF_IDF\Schemes\LogInverseNormalization.cs" />
+    <Compile Include="TF_IDF\Schemes\LogUnaryNormalization.cs" />
     <Compile Include="TF_IDF\Scheme.cs" />
     <Compile Include="TF_IDF\TfIdfCalculators.cs" />
     <Compile Include="TF_IDF\TfIdfContext.cs" />
@@ -75,6 +75,7 @@
     <Compile Include="WeightingScheme.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

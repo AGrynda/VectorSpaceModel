@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VectorSpaceModel.Corpus" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAgAAAAAAAAAEAgAAAAAACAAAAAAAABAA=</HashCode>
+      <FileName>Corpus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorSpaceModel.Document" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Document.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.Statistics" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Statistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.VsmLogic" Collapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VsmLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.InverseDocumentFrequency.IDFCalculation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InverseDocumentFrequency\IDFCalculation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorSpaceModel.InverseDocumentFrequency.IDFFactory" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InverseDocumentFrequency\IDFFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.InverseDocumentFrequency.IDFMaxCalculation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InverseDocumentFrequency\IDFMaxCalculation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorSpaceModel.InverseDocumentFrequency.IDFSmoothCalculation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InverseDocumentFrequency\IDFSmoothCalculation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorSpaceModel.InverseDocumentFrequency.ProbabilisticIDFCalculation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InverseDocumentFrequency\ProbabilisticIDFCalculation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorSpaceModel.InverseDocumentFrequency.UnaryCalculation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InverseDocumentFrequency\UnaryCalculation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorSpaceModel.TermFrequency.BinaryCalculation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TermFrequency\BinaryCalculation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorSpaceModel.TermFrequency.DoubleNormalizationKCalc" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>TermFrequency\DoubleNormalizationKCalc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorSpaceModel.TermFrequency.LogNormalizationCalc" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TermFrequency\LogNormalizationCalc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorSpaceModel.TermFrequency.RawFrequencyCalc" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TermFrequency\RawFrequencyCalc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorSpaceModel.TermFrequency.TFFactory" Collapsed="true">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TermFrequency\TfFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.TF_IDF.Scheme">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TF_IDF\Scheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.TF_IDF.TfIdfCalculators" Collapsed="true">
+    <Position X="17.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>TF_IDF\TfIdfCalculators.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.TF_IDF.TfIdfContext" Collapsed="true">
+    <Position X="19" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TF_IDF\TfIdfContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.TF_IDF.Schemes.BinaryIDFSmooth" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TF_IDF\Schemes\BinaryIdfSmooth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.TF_IDF.Schemes.DoubleNormalizationInverse" Collapsed="true">
+    <Position X="2.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TF_IDF\Schemes\DoubleNormalizationInverse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.TF_IDF.Schemes.LogIdfNormalization" Collapsed="true">
+    <Position X="5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TF_IDF\Schemes\LogIdfNormalization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.TF_IDF.Schemes.LogInverseNormalization" Collapsed="true">
+    <Position X="7.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TF_IDF\Schemes\LogInverseNormalization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorSpaceModel.TF_IDF.Schemes.LogUnaryNormalization" Collapsed="true">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TF_IDF\Schemes\LogUnaryNormalization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="VectorSpaceModel.ICorpus" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Corpus.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="VectorSpaceModel.InverseDocumentFrequency.IIDFCalculation" Collapsed="true">
+    <Position X="13.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InverseDocumentFrequency\IDFFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="VectorSpaceModel.TermFrequency.ITFCalculation" Collapsed="true">
+    <Position X="15.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TermFrequency\TfFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="VectorSpaceModel.TfWeight" Collapsed="true">
+    <Position X="13.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAgAAAA=</HashCode>
+      <FileName>WeightingScheme.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="VectorSpaceModel.IdfWeight" Collapsed="true">
+    <Position X="12" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAAAgAAAIAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WeightingScheme.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="VectorSpaceModel.WeightingScheme" Collapsed="true">
+    <Position X="15.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WeightingScheme.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

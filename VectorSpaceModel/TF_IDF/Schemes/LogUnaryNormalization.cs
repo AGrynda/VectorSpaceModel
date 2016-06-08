@@ -3,7 +3,7 @@ using VectorSpaceModel.TermFrequency;
 
 namespace VectorSpaceModel.TF_IDF.Schemes
 {
-    public class LogNormalizationUnary : Scheme
+    public class LogUnaryNormalization : Scheme
     {
         public override TfIdfCalculators Calculators()
         {

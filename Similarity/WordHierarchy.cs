@@ -102,7 +102,6 @@ namespace Similarity
                 if (bestDepth > depth)
                     Distance[toSynSet.hereiam] = depth;
             }
-            return;
         }
 
         private void DefineDepthMatrix()
@@ -121,10 +120,10 @@ namespace Similarity
                             if (i != j && j != k && DepthMatrix.ContainsKey(kjKey))
                             {
                                 var ijKey = GetKey(i, j);
-                                if (!DepthMatrix.ContainsKey(ijKey) ||
-                                    (int) DepthMatrix[ijKey] > (int) DepthMatrix[ikKey] + (int) DepthMatrix[kjKey])
+                                var depth = (int) DepthMatrix[ikKey] + (int) DepthMatrix[kjKey];
+                                if (!DepthMatrix.ContainsKey(ijKey) || (int) DepthMatrix[ijKey] > depth)
                                 {
-                                    DepthMatrix[ijKey] = (int) DepthMatrix[ikKey] + (int) DepthMatrix[kjKey];
+                                    DepthMatrix[ijKey] = depth;
                                 }
                             }
                         }
