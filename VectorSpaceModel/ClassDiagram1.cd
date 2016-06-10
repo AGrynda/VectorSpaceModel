@@ -136,35 +136,35 @@
       <FileName>TF_IDF\TfIdfContext.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="VectorSpaceModel.TF_IDF.Schemes.BinaryIDFSmooth" Collapsed="true">
+  <Class Name="VectorSpaceModel.TF_IDF.Schemes.BinaryIDFSmooth">
     <Position X="0.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TF_IDF\Schemes\BinaryIdfSmooth.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="VectorSpaceModel.TF_IDF.Schemes.DoubleNormalizationInverse" Collapsed="true">
+  <Class Name="VectorSpaceModel.TF_IDF.Schemes.DoubleNormalizationInverse">
     <Position X="2.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TF_IDF\Schemes\DoubleNormalizationInverse.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="VectorSpaceModel.TF_IDF.Schemes.LogIdfNormalization" Collapsed="true">
+  <Class Name="VectorSpaceModel.TF_IDF.Schemes.LogIdfNormalization">
     <Position X="5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TF_IDF\Schemes\LogIdfNormalization.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="VectorSpaceModel.TF_IDF.Schemes.LogInverseNormalization" Collapsed="true">
+  <Class Name="VectorSpaceModel.TF_IDF.Schemes.LogInverseNormalization">
     <Position X="7.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TF_IDF\Schemes\LogInverseNormalization.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="VectorSpaceModel.TF_IDF.Schemes.LogUnaryNormalization" Collapsed="true">
+  <Class Name="VectorSpaceModel.TF_IDF.Schemes.LogUnaryNormalization">
     <Position X="9.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>

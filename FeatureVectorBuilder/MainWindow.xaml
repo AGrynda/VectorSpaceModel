@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FeatureVectorBuilder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="729.261" Width="979.663">
     <Grid>
-        
+        <Label x:Name="label" Content="tf method:" HorizontalAlignment="Left" Margin="33,110,0,0" VerticalAlignment="Top" Width="102"/>
+        <Label x:Name="label_Copy" Content="idf method:" HorizontalAlignment="Left" Margin="33,154,0,0" VerticalAlignment="Top" Width="102"/>
+        <Label x:Name="label_Copy1" Content="Similarity method:" HorizontalAlignment="Left" Margin="33,199,0,0" VerticalAlignment="Top" Width="102"/>
+        <ComboBox x:Name="TFSelector" HorizontalAlignment="Left" Margin="216,114,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="IDFSelector" HorizontalAlignment="Left" Margin="216,158,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="SimSelector" HorizontalAlignment="Left" Margin="216,203,0,0" VerticalAlignment="Top" Width="120"/>
+        <GroupBox x:Name="groupBox" Header="Options" HorizontalAlignment="Left" Height="151" Margin="15,87,0,0" VerticalAlignment="Top" Width="473"/>
+        <Button x:Name="button" Content="Generate Vector" HorizontalAlignment="Left" Margin="200,243,0,0" VerticalAlignment="Top" Width="116" Height="30"/>
+        <RichTextBox x:Name="OutputTextBox" HorizontalAlignment="Left" Height="323" Margin="488,87,0,0" VerticalAlignment="Top" Width="474" IsReadOnly="True">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="Output"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="button1" Content="Select folder" HorizontalAlignment="Left" Margin="21,311,0,0" VerticalAlignment="Top" Width="99" Click="button1_Click" Height="38"/>
+        <Label x:Name="PathLabel" Content="Label" HorizontalAlignment="Left" Margin="125,311,0,0" VerticalAlignment="Top" Height="38" Width="254"/>
+        <Button x:Name="ReadTermsButton" Content="Read terms" HorizontalAlignment="Left" Margin="384,311,0,0" VerticalAlignment="Top" Width="99" Click="ReadTermsButton_Click" Height="38"/>
+
     </Grid>
 </Window>

@@ -64,6 +64,7 @@
     <Compile Include="TermFrequency\RawFrequencyCalc.cs" />
     <Compile Include="TermFrequency\TfFactory.cs" />
     <Compile Include="TF_IDF\Schemes\BinaryIdfSmooth.cs" />
+    <Compile Include="TF_IDF\Schemes\CustomizedScheme.cs" />
     <Compile Include="TF_IDF\Schemes\DoubleNormalizationInverse.cs" />
     <Compile Include="TF_IDF\Schemes\LogIdfNormalization.cs" />
     <Compile Include="TF_IDF\Schemes\LogInverseNormalization.cs" />

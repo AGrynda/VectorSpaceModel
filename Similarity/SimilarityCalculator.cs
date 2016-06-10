@@ -10,6 +10,13 @@ namespace Similarity
         float CalcSimilarity(WordHierarchy word1, WordHierarchy word2, int strategy = 2);
     }
 
+    public enum SimilarityMethod
+    {
+        PathLength,
+        WuPalmer,
+        LikokHodorov
+    }
+
     public class SimilarityCalculator : ISimilarity
     {
         public float CalcSimilarity(string word1, string word2)

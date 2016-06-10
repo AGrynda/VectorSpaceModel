@@ -4,6 +4,9 @@ using System.Linq;
 using DataHandler;
 using LinguisticProcessor;
 using Similarity;
+using VectorSpaceModel;
+using VectorSpaceModel.InverseDocumentFrequency;
+using VectorSpaceModel.TermFrequency;
 using VectorSpaceModel.TF_IDF;
 using VectorSpaceModel.TF_IDF.Schemes;
 using Wnlib;
@@ -30,10 +33,9 @@ namespace diplomlyat
             if (any)
             {
                 var corpus = FileHandler.GetCorpusByPath(args.First());
-
+                var idfFactory = new IDFFactory();
                 var tfIdfContext = new TfIdfContext(new LogIdfNormalization());
                 var tfIdfCalculators = tfIdfContext.Calculators();
-                var fullPath = Path.GetFullPath(args[0]);
                 tfIdfCalculators.IDFCalculation.CalculateIdf(corpus);
             }
             Console.WriteLine("Hello, pishy diplom bleat'!!!");

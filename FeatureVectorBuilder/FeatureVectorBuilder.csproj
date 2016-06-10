@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -94,6 +95,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataHandler\DataHandler.csproj">
+      <Project>{13193EEA-B925-4738-841D-609F76467403}</Project>
+      <Name>DataHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Similarity\Similarity.csproj">
+      <Project>{9EB1510F-2F8D-48E2-8CA2-D6F004B4770E}</Project>
+      <Name>Similarity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VectorSpaceModel\VectorSpaceModel.csproj">
+      <Project>{ED5B54E5-DFE3-484B-A6EA-32F4AD0FE600}</Project>
+      <Name>VectorSpaceModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -11,7 +11,7 @@ namespace VectorSpaceModel.TF_IDF.Schemes
             var tfCalculation = tfFactory.GetCalculator(TfWeight.LogNormalization);
 
             var idfFactory = new IDFFactory();
-            var idfCalculation = idfFactory.GetCalc(IdfWeight.Unary);
+            var idfCalculation = idfFactory.GetCalculator(IdfWeight.Unary);
 
             return new TfIdfCalculators(idfCalculation, tfCalculation);
         }

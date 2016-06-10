@@ -4,7 +4,7 @@ namespace VectorSpaceModel.InverseDocumentFrequency
 {
     public class IDFFactory
     {
-        public IIDFCalculation GetCalc(IdfWeight weight)
+        public IIDFCalculation GetCalculator(IdfWeight weight)
         {
             switch (weight)
             {
