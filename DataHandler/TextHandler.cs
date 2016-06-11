@@ -17,7 +17,7 @@ namespace DataHandler
         public static IList<string> GetTerms(string textData)
         {
             var punctuation = textData.Where(char.IsPunctuation).Distinct().ToArray();
-            var terms = textData.Split().Select(x => x.Trim(punctuation)).Except(StopWords).ToList();
+            var terms = textData.Split().Select(x => x.Trim(punctuation)).Except(StopWords).Where(term => term.All(char.IsLetter)).ToList();
 
             return terms;
         }

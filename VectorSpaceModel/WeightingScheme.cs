@@ -2,8 +2,8 @@
 {
     public enum TfWeight
     {
-        Binary,
         RawFrequency,
+        Binary,
         LogNormalization,
         DoubleNormalizationHalf,
         DoubleNormalizationK

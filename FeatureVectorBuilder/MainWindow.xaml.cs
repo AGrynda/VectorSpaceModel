@@ -17,6 +17,9 @@ using System.Windows.Shapes;
 using DataHandler;
 using Similarity;
 using VectorSpaceModel;
+using VectorSpaceModel.InverseDocumentFrequency;
+using VectorSpaceModel.TermFrequency;
+using VectorSpaceModel.TF_IDF.Schemes;
 using RichTextBox = System.Windows.Controls.RichTextBox;
 
 namespace FeatureVectorBuilder
@@ -28,7 +31,7 @@ namespace FeatureVectorBuilder
     {
 
         string samplesPath = "E:\\gryndos\\Diploma\\diplomlyat\\Samples";
-
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -64,6 +67,19 @@ namespace FeatureVectorBuilder
             //var terms = corpus.Terms.Aggregate("", (current, term) => current + (term + "\n"));
 
             //OutputBlock.Text = terms;
+        }
+
+        private void GenerateButton_Click(object sender, RoutedEventArgs e)
+        {
+            var tfFactory = new TFFactory();
+            var idfFactory = new IDFFactory();
+            //var scheme = new CustomizedScheme();
+
+            //var simMethod = SimSelector.
+
+            var tf = tfFactory.GetCalculator((TfWeight) TFSelector.SelectedIndex);
+            var idf = idfFactory.GetCalculator((IdfWeight) IDFSelector.SelectedIndex);
+            //idf.CalculateIdf();
         }
     }
 }

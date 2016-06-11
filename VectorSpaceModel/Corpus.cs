@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using VectorSpaceModel.TermFrequency;
 
 namespace VectorSpaceModel
 {
@@ -28,6 +29,15 @@ namespace VectorSpaceModel
         {
             Documents.Add(doc);
             Terms.UnionWith(doc.Terms);
+        }
+
+
+        public void ReCalcTF(ITFCalculation tfCalculation)
+        {
+            foreach (var document in Documents)
+            {
+                tfCalculation.CalculateTF(document);
+            }
         }
     }
 }
